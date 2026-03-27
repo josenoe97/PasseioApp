@@ -9,5 +9,11 @@ Tailwind CSS
 npm install --save tailwindcss@3.4.17 postcss autoprefixer
 npx tailwindcss init  //Executor de pacote e cria tailwind.config.js
 
+NG's
+ng g module template --routing // Gera o modulo de navegação entre as paginas por conta do "--routing"
+ng g c template/layout   
+
+
+
 
 
