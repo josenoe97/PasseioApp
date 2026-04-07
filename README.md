@@ -25,6 +25,11 @@ npm install --save-dev json-server // Simula uma API
 
 ng g s categorias/categoria //Gera o service
 
+ng g m lugares --routing
+
+ng g c lugares/lugar
+
+ng g s lugares/lugar
 
 
 
