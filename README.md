@@ -31,6 +31,8 @@ ng g c lugares/lugar
 
 ng g s lugares/lugar
 
+ng g class lugares/lugar
+
 
 
 
