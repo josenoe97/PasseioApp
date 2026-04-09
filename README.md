@@ -33,6 +33,9 @@ ng g s lugares/lugar
 
 ng g class lugares/lugar
 
+ng g m galeria--routing
+
+ng g c galeria/galeria
 
 
 
