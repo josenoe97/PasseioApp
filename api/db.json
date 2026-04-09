@@ -19,6 +19,22 @@
       "urlFoto": "teste",
       "avaliacao": "3",
       "id": 1
+    },
+    {
+      "nome": "Praia do Espelho",
+      "categoria": "Praias",
+      "localizacao": "Bahia",
+      "urlFoto": "Fotopraiadoespelhgobahia.jpg",
+      "avaliacao": "5",
+      "id": 2
+    },
+    {
+      "nome": "Parque Ibirapuera",
+      "categoria": "-- SELECIONE --",
+      "localizacao": "Rio de Janeiro",
+      "urlFoto": "teste",
+      "avaliacao": "5",
+      "id": 3
     }
   ]
 }

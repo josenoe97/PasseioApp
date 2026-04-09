@@ -38,13 +38,22 @@ export class LugarComponent implements OnInit{
   }
 
   salvar(){
-    this.service.salvar(this.camposForm.value)
-    .subscribe({
-      next: (lugar) => {
-        console.log("Cadastrado com sucesso!", lugar);
-        this.camposForm.reset();
-      },
-      error: (erro) => console.log("Ocorreu um erro", erro)
-    });
+    this.camposForm.markAllAsTouched();//revela  os campos que tem erro!
+
+    if(this.camposForm.valid){
+      this.service.salvar(this.camposForm.value)
+      .subscribe({
+        next: (lugar) => {
+          console.log("Cadastrado com sucesso!", lugar);
+          this.camposForm.reset();
+        },
+        error: (erro) => console.log("Ocorreu um erro", erro)
+      });
+    }
+  }
+
+  isCampoInvalido(nomeCampo: string) : boolean {
+    const campo = this.camposForm.get(nomeCampo);
+    return campo?.invalid && campo?.touched && campo?.errors?.['required'];
   }
 }

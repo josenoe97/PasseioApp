@@ -14,10 +14,13 @@
                 placeholder="Praia do Sol, restaurante estrela"
                 class="w-full p-3 border border-gray-300 rounded shadow-sm focus:ring focus:ring-blue-400"
             />
+            <span class="text-red-500 text-sm" *ngIf="isCampoInvalido('nome')">
+                Campo Obrigatório
+            </span>  
         </div>
 
         <div class="mb-4">
-            <label for="nome" class="block text-gray-600 font-medium mb-2">Categoria</label>
+            <label for="categoria" class="block text-gray-600 font-medium mb-2">Categoria</label>
             <select
                 id="categoria"
                 name="categoria"
@@ -29,6 +32,9 @@
                     {{ cat.nome }}
                 </option>
             </select>
+            <span class="text-red-500 text-sm" *ngIf="isCampoInvalido('categoria')">
+                Campo Obrigatório
+            </span>  
         </div>
 
         <div class="mb-4">
@@ -41,6 +47,9 @@
                 placeholder="Ex: São Paulo"
                 class="w-full p-3 border border-gray-300 rounded shadow-sm focus:ring focus:ring-blue-400"
             />
+            <span class="text-red-500 text-sm" *ngIf="isCampoInvalido('localizacao')">
+                Campo Obrigatório
+            </span>  
         </div>
 
         <div class="mb-4">
@@ -53,10 +62,13 @@
                 placeholder="Ex: http://exemplo.com.br/foto.jpg"
                 class="w-full p-3 border border-gray-300 rounded shadow-sm focus:ring focus:ring-blue-400"
             />
+            <span class="text-red-500 text-sm" *ngIf="isCampoInvalido('urlFoto')">
+                Campo Obrigatório
+            </span>  
         </div>
 
         <div class="mb-4">
-            <label for="nome" class="block text-gray-600 font-medium mb-2">Avaliação</label>
+            <label for="avaliacao" class="block text-gray-600 font-medium mb-2">Avaliação</label>
             <select
                 id="avaliacao"
                 name="avaliacao"
@@ -70,6 +82,9 @@
                 <option [value]="4"> 4 - Muito Bom</option>
                 <option [value]="5"> 5 - Excelente</option>
             </select>
+            <span class="text-red-500 text-sm" *ngIf="isCampoInvalido('avaliacao')">
+                Campo Obrigatório
+            </span>  
         </div>
 
         <button type="submit" class="w-full bg-blue-600 text-white font-semibold p-3 rounded shadow hover:bg-blue-700">
