@@ -37,6 +37,8 @@ ng g m galeria--routing
 
 ng g c galeria/galeria
 
+ng g c landingpage
+
 
 
 
