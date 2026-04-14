@@ -23,7 +23,7 @@ export class LandingpageComponent {
   }
 
   logarComGoogle(){
-
+    
   }
 
   isLoggedIn() : boolean{
