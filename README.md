@@ -43,6 +43,8 @@ npm install --save angular-oauth2-oidc@19 // instalação do OAuth
 
 ng g s authgoogle
 
+ng g guard auth
+ - CanActive
 
 
 
