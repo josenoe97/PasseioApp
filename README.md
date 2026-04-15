@@ -39,6 +39,10 @@ ng g c galeria/galeria
 
 ng g c landingpage
 
+npm install --save angular-oauth2-oidc@19 // instalação do OAuth
+
+ng g s authgoogle
+
 
 
 
