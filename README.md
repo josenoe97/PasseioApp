@@ -48,4 +48,5 @@ ng g guard auth
 
 ng g environments // cria um ambiente de desenvolvimento com suas devidas variaveis
 
+ng serve --configuration=production // roda com configuração de produção
 

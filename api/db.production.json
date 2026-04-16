@@ -1,0 +1,13 @@
+{
+  "categorias": [],
+  "lugares": [
+    {
+      "nome": "Praia do Zezim",
+      "categoria": "Praias",
+      "localizacao": "Rio de Janeiro",
+      "urlFoto": "teste",
+      "avaliacao": "3",
+      "id": 1
+    }
+  ]
+}
