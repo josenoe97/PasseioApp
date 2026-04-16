@@ -50,3 +50,6 @@ ng g environments // cria um ambiente de desenvolvimento com suas devidas variav
 
 ng serve --configuration=production // roda com configuração de produção
 
+npm run build --prod// build com a configuração de produção conforme o environment- gerou a pasta \dist\passeio-app 
+
+
