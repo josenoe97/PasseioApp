@@ -46,5 +46,6 @@ ng g s authgoogle
 ng g guard auth
  - CanActive
 
+ng g environments // cria um ambiente de desenvolvimento com suas devidas variaveis
 
 
