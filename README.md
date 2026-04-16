@@ -52,4 +52,18 @@ ng serve --configuration=production // roda com configuração de produção
 
 npm run build --prod// build com a configuração de produção conforme o environment- gerou a pasta \dist\passeio-app 
 
+docker build --tag cursoangular-api . // criar imagens o "." é raiz do dockerfile - cursoangular-api é o nome da imagem -- build para api
 
+docker images // visualizar imagens
+
+docker run -p 4000:4000 --name cursoangular-api-container -d cursoangular-api 
+
+docker ps --//-- 7160b0b97f23   cursoangular-api   "/bin/sh -c 'json-se…"   Less than a second ago   Up 23 seconds   0.0.0.0:4000->4000/tcp, [::]:4000->4000/tcp   cursoangular-api-container
+
+docker build --tag cursoangular-app . // criando o container do front 
+
+docker run -p 4200:80 --name cursoangular-app-container -d cursoangular-app // 80 é porta do nginx
+
+docker container rm cursoangular-app-container // deleta container
+
+docker image rm cursoangular-app // deleta imagem
